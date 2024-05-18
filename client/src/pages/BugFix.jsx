@@ -29,7 +29,7 @@ const BugFix = () => {
       setLanguage(languageEd);
     }
     try {
-      const res = await fetch('https://polyglotcode.onrender.com', {
+      const res = await fetch('https://polyglotcode.onrender.com/api/fixbug', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
