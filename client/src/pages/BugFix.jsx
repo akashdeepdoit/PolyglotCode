@@ -29,7 +29,7 @@ const BugFix = () => {
       setLanguage(languageEd);
     }
     try {
-      const res = await fetch('https://codabra.onrender.com/api/fixbug', {
+      const res = await fetch('https://polyglotcode.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

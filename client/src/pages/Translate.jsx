@@ -28,7 +28,7 @@ const Translate = () => {
       alert('Please select a different language');
       return;
     }
-    const res = await fetch('https://codabra.onrender.com/api/translate', {
+    const res = await fetch('https://polyglotcode.onrender.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

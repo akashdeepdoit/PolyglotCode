@@ -20,10 +20,10 @@ router.post('/', async (req, res) => {
         const completion = await openai.completions.create({
             model: 'gpt-3.5-turbo-instruct',
             prompt: `Fix the bug of the following code and give me the fixed code,if code is correct then give answer in yes only:\n\n${code}`,
-            // increase output size
+            
             max_tokens: 2000,
         });
-        console.log(completion.choices[0].text);
+        console.log(completion.choices[0].text); //response object completion
         res.send(completion.choices[0].text);
 
     } catch (error) {
